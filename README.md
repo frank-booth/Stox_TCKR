@@ -30,6 +30,8 @@
 ---
 ### _Entity Relationship Diagram (ERD)_
 
+
+![Image](assets/ERD.png)
 ---
 ### _Wireframes_
 
