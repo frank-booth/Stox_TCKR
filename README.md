@@ -25,8 +25,8 @@
 ### _Trello Board_
 
 ---
-### _Component Heirarchy Diagram (CHD)_
-
+### _Component Heirarchy Diagram_
+![Image](assets/CHD.png)
 ---
 ### _Entity Relationship Diagram (ERD)_
 
