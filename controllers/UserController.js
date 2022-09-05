@@ -1,4 +1,4 @@
-const {User, Stock} = require('../models')
+const {User, Stock, Note} = require('../models')
 
 const getAllUsers= async (req,res)=>{
     try{
@@ -13,7 +13,7 @@ const getAllUsers= async (req,res)=>{
 const getUserProfile = async (req,res) =>{
     try{
         let userId=req.params.user_id
-        const userProfile= await User.findByPk(userId,{include:[{model:Stock}]})
+        const userProfile= await User.findByPk(userId,{include:[{model:Stock},{model:Note}]})
         res.send(userProfile)
     }
     catch(error){

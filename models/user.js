@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       User.hasMany(models.Stock,{foreignKey:'userId'})
+      User.hasMany(models.Note,{foreignKey:'userId'})
     }
   }User.init({
     firstName: DataTypes.STRING,
