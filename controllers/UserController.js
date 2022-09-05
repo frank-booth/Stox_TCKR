@@ -12,7 +12,8 @@ const getAllUsers= async (req,res)=>{
 
 const getUserProfile = async (req,res) =>{
     try{
-        const userProfile= await User.findByPk(req.params.user_id,{include:[{model:Stock}]})
+        let userId=req.params.user_id
+        const userProfile= await User.findByPk(userId,{include:[{model:Stock}]})
         res.send(userProfile)
     }
     catch(error){
